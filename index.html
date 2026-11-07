@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adil Salah — Software Developer resume">
+  <title>Adil Salah — Resume</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #222;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    main {
+      width: min(100% - 36px, 760px);
+      margin: 56px auto;
+    }
+    header { margin-bottom: 38px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 7vw, 3.2rem);
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: -1.5px;
+    }
+    .role { margin: 8px 0 12px; font-size: 1.15rem; }
+    .contact { font-family: Arial, sans-serif; font-size: .9rem; color: #555; }
+    a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+    .download { display: inline-block; margin-top: 18px; font-family: Arial, sans-serif; font-size: .9rem; }
+    section { margin: 34px 0; }
+    h2 {
+      margin: 0 0 12px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #bbb;
+      font-family: Arial, sans-serif;
+      font-size: .95rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    p { margin: 0; }
+    .project { margin: 19px 0 23px; }
+    h3 { margin: 0; font-size: 1.08rem; font-weight: 700; }
+    .stack { margin: 2px 0 7px; color: #555; font-size: .92rem; font-style: italic; }
+    ul { margin: 7px 0 0; padding-left: 22px; }
+    li { margin: 3px 0; }
+    .plain-list { list-style: none; padding: 0; }
+    .plain-list li { margin: 5px 0; }
+    footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid #ddd; color: #666; font: .82rem Arial, sans-serif; }
+    @media (max-width: 600px) { main { margin: 32px auto; } }
+    @media print {
+      main { width: 100%; margin: 0; }
+      .download { display: none; }
+      section, .project { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Adil Salah</h1>
+    <p class="role">Software Developer</p>
+    <p class="contact">
+      Kozhikode, Kerala ·
+      <a href="tel:+917510630067">+91 75106 30067</a> ·
+      <a href="mailto:adilsalah996@gmail.com">adilsalah996@gmail.com</a>
+    </p>
+    <p class="contact">LinkedIn · GitHub</p>
+    <a class="download" href="adil-salah-resume.pdf" download>Download resume (PDF)</a>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Third-year BCA student at Srinivas University with hands-on experience building Python applications, backend APIs, database-driven systems, and interactive web applications. Worked with Python, FastAPI, SQL, PostgreSQL, MySQL, and JavaScript across academic and personal projects. Also experienced with Git, Docker, GitHub Actions, and AWS EC2 through a containerized application and CI/CD project. Looking to contribute to software development teams while building practical experience in designing, developing, and maintaining applications.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Applications (BCA)</strong><br>
+    Srinivas University – ICIS<br>
+    Mangalore, Karnataka</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <p><strong>Programming:</strong> Python, Java, C, C++, JavaScript<br>
+    <strong>Backend Development:</strong> FastAPI, REST APIs, SQLAlchemy<br>
+    <strong>Frontend Development:</strong> HTML, CSS, JavaScript<br>
+    <strong>Databases:</strong> PostgreSQL, MySQL, SQL<br>
+    <strong>Python Technologies:</strong> Tkinter, Streamlit, Plotly<br>
+    <strong>Tools and Platforms:</strong> Git, GitHub, VS Code, Docker, GitHub Actions, Trivy, AWS EC2</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <article class="project">
+      <h3>CloudAttend – Attendance Management System</h3>
+      <p class="stack">Python, FastAPI, PostgreSQL, JavaScript</p>
+      <ul>
+        <li>Developed a web-based attendance management application with separate student and teacher dashboards.</li>
+        <li>Built backend APIs using FastAPI and SQLAlchemy with PostgreSQL to manage student, teacher, class, batch, schedule, and attendance data.</li>
+        <li>Implemented attendance session management, attendance record retrieval, and teacher-related attendance operations through API endpoints.</li>
+        <li>Connected frontend pages built with HTML, CSS, and JavaScript to backend services and documented local setup and project limitations.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>Smart City Air Quality Monitoring System</h3>
+      <p class="stack">Python, MySQL, Streamlit, Plotly, OpenWeather API</p>
+      <ul>
+        <li>Built a Python data collection script to retrieve weather and air quality information using the OpenWeather API.</li>
+        <li>Used MySQL to store collected readings and support historical data retrieval.</li>
+        <li>Developed an interactive Streamlit dashboard with Plotly charts to display pollution measurements and historical trends.</li>
+        <li>Implemented email alerts for unhealthy air quality conditions.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>Python CI Pipeline and AWS EC2 Deployment</h3>
+      <p class="stack">Python, Docker, GitHub Actions, Trivy, AWS EC2</p>
+      <ul>
+        <li>Containerized a Python application using Docker to create a consistent application environment.</li>
+        <li>Configured GitHub Actions to automate application testing and Docker image builds.</li>
+        <li>Integrated Trivy into the CI workflow to scan container images for known security vulnerabilities.</li>
+        <li>Deployed the application on Amazon EC2 and verified that it ran successfully.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>Food Billing System</h3>
+      <p class="stack">Python, Tkinter</p>
+      <ul>
+        <li>Developed a desktop billing application using Python and Tkinter with a graphical user interface.</li>
+        <li>Implemented item selection, quantity management, automatic bill calculation, receipt generation, and transaction file handling.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Certifications and Training</h2>
+    <ul class="plain-list">
+      <li>Python Certification – freeCodeCamp (2025)</li>
+      <li>AWS Builder Labs Learning Plan (2026)</li>
+      <li>Fundamentals of Architecting on AWS (2026)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Achievement</h2>
+    <p><strong>Second Prize – College Hackathon (2025):</strong> Secured second place in a hackathon conducted by the MCA Department, collaborating with a team to develop and present a technical solution.</p>
+  </section>
+
+  <footer>Adil Salah · Software Developer</footer>
+</main>
+</body>
+</html>
